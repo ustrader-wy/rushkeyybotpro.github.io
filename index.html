@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YQT BOT PRO</title>
+  <style>
+    body {
+      background-color: #0b0c2a;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    select, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+    }
+    #signal {
+      margin-top: 20px;
+      font-size: 20px;
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>YQT BOT PRO</h1>
+  <p>100% ACCURATE SIGNAL'S</p>
+
+  <select id="platform">
+    <option value="quotex">QUOTEX</option>
+  </select>
+
+  <select id="asset">
+    <option value="USD/INR">USD/INR (OTC)</option>
+  </select>
+
+  <select id="timeframe">
+    <option value="10">10 sec</option>
+  </select>
+
+  <br>
+  <button onclick="getSignal()">Get Signal</button>
+
+  <p id="signal">Analyzing the Market...</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
